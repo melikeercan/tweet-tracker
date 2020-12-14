@@ -1,0 +1,8 @@
+com/shortcut/interview/api/CountryControllerTests.java
+ com.shortcut.interview.api.CountryControllerTests
+com/shortcut/interview/api/FetchTwitterControllerTests.java
+ com.shortcut.interview.api.FetchTwitterControllerTests
+com/shortcut/interview/InterviewApplicationTests.java
+ com.shortcut.interview.InterviewApplicationTests
+com/shortcut/interview/api/AnalyseTwitterControllerTests.java
+ com.shortcut.interview.api.AnalyseTwitterControllerTests

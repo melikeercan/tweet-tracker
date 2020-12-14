@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "4c4b16e7-0926-47aa-9881-17a98dc3af9d",
+		"name": "ShortcutApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "find all countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v0/countries/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v0",
+						"countries",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save all countries",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"code\": \"DE\",\n        \"name\": \"Germany\",\n        \"population\": 83904708,\n        \"deathPerMillion\": 266,\n        \"totalCasesPerMillion\": 15924\n    },\n    {\n        \"code\": \"FR\",\n        \"name\": \"France\",\n        \"population\": 65339066,\n        \"deathPerMillion\": 886,\n        \"totalCasesPerMillion\": 36377\n    },\n    {\n        \"code\": \"NO\",\n        \"name\": \"Norway\",\n        \"population\": 5440276,\n        \"deathPerMillion\": 71,\n        \"totalCasesPerMillion\": 7523\n    },\n    {\n        \"code\": \"US\",\n        \"name\": \"United States\",\n        \"population\": 331875677,\n        \"deathPerMillion\": 922,\n        \"totalCasesPerMillion\": 50177\n    },\n    {\n        \"code\": \"UK\",\n        \"name\": \"United Kingdom\",\n        \"population\": 68046489,\n        \"deathPerMillion\": 943,\n        \"totalCasesPerMillion\": 27179\n    },\n    {\n        \"code\": \"TR\",\n        \"name\": \"Turkey\",\n        \"population\": 84745541,\n        \"deathPerMillion\": 194,\n        \"totalCasesPerMillion\": 21673\n    },\n    {\n        \"code\": \"BR\",\n        \"name\": \"Brazil\",\n        \"population\": 213238308,\n        \"deathPerMillion\": 851,\n        \"totalCasesPerMillion\": 32367\n    },\n    {\n        \"code\": \"AU\",\n        \"name\": \"Australia\",\n        \"population\": 25632301,\n        \"deathPerMillion\": 35,\n        \"totalCasesPerMillion\": 1094\n    },\n    {\n        \"code\": \"IN\",\n        \"name\": \"India\",\n        \"population\": 1386123196,\n        \"deathPerMillion\": 103,\n        \"totalCasesPerMillion\": 7131\n    },\n    {\n        \"code\": \"CH\",\n        \"name\": \"China\",\n        \"population\": 1439323776,\n        \"deathPerMillion\": 3,\n        \"totalCasesPerMillion\": 60\n    },\n    {\n        \"code\": \"IT\",\n        \"name\": \"Italy\",\n        \"population\": 60421355,\n        \"deathPerMillion\": 1068,\n        \"totalCasesPerMillion\": 30514\n    },\n    {\n        \"code\": \"PL\",\n        \"name\": \"Poland\",\n        \"population\": 37827748,\n        \"deathPerMillion\": 604,\n        \"totalCasesPerMillion\": 30022\t\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v0/countries/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v0",
+						"countries",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"keywords\": [\"Corona\", \"Covid\", \"Vaccine\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v0/fetch/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v0",
+						"fetch",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stop",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"keywords\": [\"Corona\", \"Covid\", \"Vaccine\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v0/fetch/stop",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v0",
+						"fetch",
+						"stop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "analyse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v0/analyse/country=United Kingdom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v0",
+						"analyse",
+						"country=United Kingdom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reach",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fromCountryName\": \"United States\",\n    \"toCountryName\": \"India\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v0/analyse/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v0",
+						"analyse",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
