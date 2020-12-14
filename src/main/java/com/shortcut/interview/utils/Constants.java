@@ -2,10 +2,10 @@ package com.shortcut.interview.utils;
 
 public class Constants {
 
-  public static final String CONSUMER_KEY = "viEQSPfkfj5ZehYn5Nobicd2q";
-  public static final String CONSUMER_SECRET = "y2wryGwJuzaz1pYiRWUGtStrMH0AuBCyOj3izYgyM6zNgblRoB";
-  public static final String ACCESS_KEY = "1338086637314707457-YGGWCVGzw06ALKp4ZgSi5yFCGtM7Ll";
-  public static final String ACCESS_SECRET = "lGtump6TzcIuBi0LUi4jNV58vS4xXrsD1HBMYfnVMnL5O";
+  public static final String CONSUMER_KEY = "";
+  public static final String CONSUMER_SECRET = "";
+  public static final String ACCESS_KEY = "";
+  public static final String ACCESS_SECRET = "";
 
   public static final String SEARCH_KEYWORD_LIST_IS_EMPTY = "Search keyword list is empty or null";
   public static final String SEARCH_KEYWORD_IS_EMPTY_OR_NULL = "Search keyword is empty or null";
